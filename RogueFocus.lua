@@ -64,7 +64,7 @@ function RogueFocus:OnLoad()
 	RogueFocus:Toggle()
 	-- It seems that all has gone well till now. Hi there!
 	DEFAULT_CHAT_FRAME:AddMessage(ROGUEFOCUS_WELCOME)
-	-- RogueFocusEnergyText:SetFont("Fonts\\FRIZQT__.TTF", 8,"OUTLINE")	
+	RogueFocusEnergyText:SetFont("Fonts\\FRIZQT__.TTF", 6,"OUTLINE")	
 end
 
 function RogueFocus:OnEvent(eventArg)
