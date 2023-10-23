@@ -5,6 +5,6 @@ Compact Combo/Energy/Tick display
 
 **/rfc** for options.
 
-![](https://github.com/Noeek/RogueFocus/blob/main/1.png)
+![](https://github.com/Noeek/RogueFocus/blob/main/sample1.png)
 
-![](https://github.com/Noeek/RogueFocus/blob/main/2.png)
+![](https://github.com/Noeek/RogueFocus/blob/main/sample2.png)
