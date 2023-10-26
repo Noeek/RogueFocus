@@ -1,13 +1,15 @@
-ROGUEFOCUS			= "贼/德-能量连击点-监视";
-ROGUEFOCUS_WELCOME	= "贼/德-能量连击点-监视: 使用 /roguefocus 或 /rfc 设置.";
+if GetLocale() ~= "zhCN" then
+ROGUEFOCUS			= "Rogue Focus Classic";
+ROGUEFOCUS_WELCOME	= "Rogue Focus Classic: type /roguefocus or /rfc for options.";
 
-ROGUEFOCUS_ENERGY	= "";
-ROGUEFOCUS_SCALE	= "大小";
-ROGUEFOCUS_LOW		= "低";
-ROGUEFOCUS_HIGH		= "高";
-ROGUEFOCUS_COMBAT	= "战斗中显示";
-ROGUEFOCUS_STEALTH	= "潜行中显示";
-ROGUEFOCUS_OTHER	= "其他情况中显示";
-ROGUEFOCUS_SOUND	= "能量音效";
-ROGUEFOCUS_LOCK		= "固定位置";
-ROGUEFOCUS_MOVE		= "提示: 取消固定才能拖动."
+ROGUEFOCUS_ENERGY	= "Energy Ticks";
+ROGUEFOCUS_SCALE	= "Scale";
+ROGUEFOCUS_LOW		= "Low";
+ROGUEFOCUS_HIGH		= "High";
+ROGUEFOCUS_COMBAT	= "Show in combat";
+ROGUEFOCUS_STEALTH	= "Show in stealth";
+ROGUEFOCUS_OTHER	= "Show in other cases";
+ROGUEFOCUS_SOUND	= "Audible ticks";
+ROGUEFOCUS_LOCK		= "Lock in place";
+ROGUEFOCUS_MOVE		= "Tip: Uncheck Lock \nand drag to move."
+end

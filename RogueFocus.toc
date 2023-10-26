@@ -7,5 +7,9 @@
 ## Notes-zhCN:|CFF00FF00RogueFocus 修改版|R|N精简并完全现代化了显示界面
 ## SavedVariables: RogueFocusConfig
 ## Notes-Source: https://github.com/Road-block/RogueFocus
+
+localization.lua
+localization.cn.lua
+
 RogueFocus.xml
 RogueFocusOptions.xml
