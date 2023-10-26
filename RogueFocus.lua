@@ -102,6 +102,12 @@ function RogueFocus:OnEvent(eventArg)
 		or (eventArg == "UPDATE_SHAPESHIFT_FORMS")
 		or (eventArg == "UPDATE_BONUS_ACTIONBAR")) then
 		if (RogueFocus:inStealth()) then RogueFocus.InStealth = true else RogueFocus.InStealth = false end
+		
+		if RogueFocus:inStealth() then
+			RogueFocusFrame:SetAlpha(0.5)	
+		else
+			RogueFocusFrame:SetAlpha(0.25)
+		end
 		RogueFocus:Toggle()
 	
 	elseif (eventArg == "PLAYER_COMBO_POINTS") then
@@ -112,16 +118,20 @@ function RogueFocus:OnEvent(eventArg)
 		
 	elseif(eventArg == "PLAYER_REGEN_DISABLED") then
 		RogueFocus.InCombat = true 
+		RogueFocusFrame:SetAlpha(1)
 		RogueFocus:Toggle()
 		
 	elseif(eventArg == "PLAYER_REGEN_ENABLED") then
 		RogueFocus.InCombat = false 
+		RogueFocusFrame:SetAlpha(0.25)
 		RogueFocus:Toggle()
 		
 	elseif(eventArg == "PLAYER_ENTERING_WORLD") then 
+		RogueFocusFrame:SetAlpha(0.25)
 		RogueFocus:Toggle()
 		
 	elseif(eventArg == "PLAYER_DEAD") then
+		RogueFocusFrame:SetAlpha(0.25)
 		RogueFocus.InCombat = false
 		RogueFocus:Toggle()
 		
@@ -195,7 +205,7 @@ function RogueFocus:Toggle()
 	elseif (RogueFocus.InCombat and RogueFocusConfig.InCombat) then
 		RogueFocusFrame:Show()
 	-- third: check the show cases. Is he in stealth and the stealth option is checked? SHOW!
-	elseif (RogueFocus.InStealth and RogueFocusConfig.InStealth) then
+	elseif (RogueFocus.InStealth and RogueFocusConfig.InStealth) then		
 		RogueFocusFrame:Show()
 	-- fourth: check the show cases. Now he's not in combat nor in stealth so he's in the other cases. Is the other cases option checked? SHOW!
 	elseif (RogueFocusConfig.InOther and not(RogueFocus.InCombat) and not(RogueFocus.InStealth)) then

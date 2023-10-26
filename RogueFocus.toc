@@ -1,7 +1,7 @@
 ## Interface: 11200
 ## Title: Rogue Focus Classic(贼德-连击点-能量监视)
 ## Version: 1.0.4.11200
-## Author: Logan, Roadblock
+## Author: Logan, Roadblock, noeek
 ## SavedVariables: RogueFocusConfig
 ## Notes-Source: https://github.com/Road-block/RogueFocus
 RogueFocus.xml

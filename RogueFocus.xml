@@ -198,7 +198,7 @@
 							<Anchors>
 								<Anchor point="CENTER">
 									<Offset>
-										<AbsDimension x="4" y="-6" />
+										<AbsDimension x="4" y="-5" />
 									</Offset>
 								</Anchor>
 							</Anchors>
@@ -220,14 +220,14 @@
 					</Layer>
 				</Layers>
 				<Frames>
-					<StatusBar name="RogueFocusEnergyBar" inherits="TextStatusBar" framestrata="BACKGROUND">
+					<StatusBar name="RogueFocusEnergyBar" inherits="RogueFocusBorderEnergy" framestrata="BACKGROUND">
 						<Size>
 							<AbsDimension x="99" y="8" />
 						</Size>
 						<Anchors>
 							<Anchor point="TOPLEFT">
 								<Offset>
-									<AbsDimension x="6" y="-8" />
+									<AbsDimension x="6" y="-7" />
 								</Offset>
 							</Anchor>
 						</Anchors>
@@ -239,14 +239,14 @@
 						<BarTexture file="Interface\BUTTONS\WHITE8X8"/>
 						<BarColor r="1.0" g="0.60" b="0.0"/>
 					</StatusBar>
-					<StatusBar name="RogueFocusEnergyBarbg" inherits="RogueFocusFrame" framestrata="BACKGROUND">
+					<StatusBar name="RogueFocusEnergyBarbg" inherits="RogueFocusBorderEnergy" framestrata="BACKGROUND">
 						<Size>
 							<AbsDimension x="99" y="8" />
 						</Size>
 						<Anchors>
 							<Anchor point="TOPLEFT">
 								<Offset>
-									<AbsDimension x="6" y="-8" />
+									<AbsDimension x="6" y="-7" />
 								</Offset>
 							</Anchor>
 						</Anchors>
