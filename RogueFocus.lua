@@ -102,11 +102,13 @@ function RogueFocus:OnEvent(eventArg)
 		or (eventArg == "UPDATE_SHAPESHIFT_FORMS")
 		or (eventArg == "UPDATE_BONUS_ACTIONBAR")) then
 		if (RogueFocus:inStealth()) then RogueFocus.InStealth = true else RogueFocus.InStealth = false end
-		
+
 		if RogueFocus:inStealth() then
 			RogueFocusFrame:SetAlpha(0.5)	
-		else
+		elseif not RogueFocus.InCombat then
 			RogueFocusFrame:SetAlpha(0.25)
+		else
+			RogueFocusFrame:SetAlpha(1)
 		end
 		RogueFocus:Toggle()
 	
