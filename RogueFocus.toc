@@ -1,10 +1,11 @@
 ## Interface: 11200
-## Title: Rogue Focus Classic(贼德-连击点-能量监视)
-## Version: 1.0.4.11200
+## Title: Rogue Focus Classic
+## Title-zhCN: |CFFFFFF00RogueFocus|R 连击点能量监视
+## Version: 1.0.5.11200
 ## Author: Logan, Roadblock, noeek
+## Notes: |CFF00FF00RogueFocus|R|NCompact Combo/Energy/Tick display
+## Notes-zhCN:|CFF00FF00RogueFocus 修改版|R|N精简并完全现代化了显示界面
 ## SavedVariables: RogueFocusConfig
 ## Notes-Source: https://github.com/Road-block/RogueFocus
 RogueFocus.xml
 RogueFocusOptions.xml
-
-## X-Turtle-Shell-Version: 1692243442
